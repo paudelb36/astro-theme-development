@@ -1,0 +1,21 @@
+---
+// Props for each card
+const { title, description } = Astro.props;
+---
+
+<section class="p-2 md:p-4">
+  <span class="">
+    <img
+      class="h-7 w-7 mb-1 md:mb-3"
+      src="https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0a47c-site_logo-1.png?w=50&h=50"
+      alt=""
+    />
+  </span>
+  <h1 class="text-xl font-semibold mb-1 md:mb-3">
+    {title}
+  </h1>
+  <p class="text-md font-medium mb-1 md:mb-8">
+    {description}
+  </p>
+</section>
+
