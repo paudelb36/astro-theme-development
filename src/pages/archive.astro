@@ -1,0 +1,45 @@
+---
+import CategoryCard from "../components/CategoryCard.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+
+const cardDetails = [
+  {
+    title: "The Art of Balancing Form and Function in Architecture",
+    description:
+      "The delicate dance between aesthetics and utility as we delve into the art of harmonizing form and function in contemporary architectural masterpieces.",
+    image: "https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0565b-tt4_post_1.jpg",
+  },
+  {
+    title: "Impressive Buildings",
+    description:
+      "They inspire us to think beyond convention and remind us that buildings can become extraordinary works of art.",
+    image: "https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/1ceb1-tt4_post_2.jpg?w=2048",
+  },
+  {
+    title: "Exploring Innovative Materials Shaping the Future of Architecture",
+    description:
+      "The delicate dance between aesthetics and utility as we delve into the art of harmonizing form and function in contemporary architectural masterpieces.",
+    image: "https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/b3f2c-tt4_post_3-scaled-1.jpg?w=2048",
+  },
+];
+---
+<Header />
+<div class="py-28 bg-[#f9f9f9]">
+    <div class="px-28 py-20">
+        <h1 class="cardo-regular text-5xl">Category : <span class="cardo-regular-italic">Architecture</span></h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-self-center gap-10">
+    {
+        cardDetails.map((card) => (
+          <CategoryCard title={card.title} description={card.description} image={card.image} />
+        ))
+      }
+
+    </div>
+
+</div>
+
+<Footer />
