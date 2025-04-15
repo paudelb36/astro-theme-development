@@ -2,62 +2,63 @@
 import CallToAction from "./CallToAction.astro";
 ---
 
-<div class="px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-28 bg-[#F9F9F9]">
-    <h3 class="cardo-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl pb-6 md:pb-8 lg:pb-12">Watch, Read, Listen</h3>
+<div class="px-6 md:px-12 lg:px-28 py-12 md:py-20 lg:py-28 bg-theme">
+    <h3 class="font-theme text-2xl sm:text-3xl md:text-4xl lg:text-5xl pb-6 md:pb-8 lg:pb-12 text-theme">Watch, Read, Listen</h3>
     
     <!-- Article Items -->
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg cardo-regular py-4 sm:py-6 md:py-8 border-t-1 gap-2 sm:gap-0">
-      <div class="hover:underline sm:w-1/2 md:w-2/3">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg font-theme py-4 sm:py-6 md:py-8 border-t border-theme gap-2 sm:gap-0">
+      <div class="hover:underline sm:w-1/2 md:w-2/3 text-theme">
         The Art of Balancing Form and Function in Architecture
       </div>
       <div class="text-sm sm:text-base flex flex-wrap items-center gap-1 sm:gap-2">
-        <span class="text-gray-500 hover:underline">Aug 14, 2023</span>
-        <span class="text-gray-500 hidden sm:inline">—</span>
-        <span class="text-gray-500">by</span>
-        <span class="hover:underline">Joan Smith</span>
-        <span class="text-gray-500">in</span>
-        <span class="hover:underline">Architecture</span>
+        <span class="text-theme hover:underline">Aug 14, 2023</span>
+        <span class="text-theme hidden sm:inline">—</span>
+        <span class="text-theme">by</span>
+        <span class="hover:underline text-theme">Joan Smith</span>
+        <span class="text-theme">in</span>
+        <span class="hover:underline text-theme">Architecture</span>
       </div>
     </div>
   
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg cardo-regular py-4 sm:py-6 md:py-8 border-t-1 gap-2 sm:gap-0">
-      <div class="hover:underline sm:w-1/2 md:w-2/3">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg font-theme py-4 sm:py-6 md:py-8 border-t border-theme gap-2 sm:gap-0">
+      <div class="hover:underline sm:w-1/2 md:w-2/3 text-theme">
         Impressive Buildings
       </div>
       <div class="text-sm sm:text-base flex flex-wrap items-center gap-1 sm:gap-2">
-        <span class="text-gray-500 hover:underline">Aug 14, 2023</span>
-        <span class="text-gray-500 hidden sm:inline">—</span>
-        <span class="text-gray-500">by</span>
-        <span class="hover:underline">Joan Smith</span>
-        <span class="text-gray-500">in</span>
-        <span class="hover:underline">Architecture</span>
+        <span class="text-theme hover:underline">Aug 14, 2023</span>
+        <span class="text-theme hidden sm:inline">—</span>
+        <span class="text-theme">by</span>
+        <span class="hover:underline text-theme">Joan Smith</span>
+        <span class="text-theme">in</span>
+        <span class="hover:underline text-theme">Architecture</span>
       </div>
     </div>
   
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg cardo-regular py-4 sm:py-6 md:py-8 border-t-1 gap-2 sm:gap-0">
-      <div class="hover:underline sm:w-1/2 md:w-2/3">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-base sm:text-lg font-theme py-4 sm:py-6 md:py-8 border-t border-theme gap-2 sm:gap-0">
+      <div class="hover:underline sm:w-1/2 md:w-2/3 text-theme">
         Exploring Innovative Materials Shaping the Future of Architecture
       </div>
       <div class="text-sm sm:text-base flex flex-wrap items-center gap-1 sm:gap-2">
-        <span class="text-gray-500 hover:underline">Aug 14, 2023</span>
-        <span class="text-gray-500 hidden sm:inline">—</span>
-        <span class="text-gray-500">by</span>
-        <span class="hover:underline">Joan Smith</span>
-        <span class="text-gray-500">in</span>
-        <span class="hover:underline">Architecture</span>
+        <span class="text-theme hover:underline">Aug 14, 2023</span>
+        <span class="text-theme hidden sm:inline">—</span>
+        <span class="text-theme">by</span>
+        <span class="hover:underline text-theme">Joan Smith</span>
+        <span class="text-theme">in</span>
+        <span class="hover:underline text-theme">Architecture</span>
       </div>
     </div>
   
     <!-- Pagination -->
-    <div class="flex flex-col sm:flex-row justify-between items-center text-sm sm:text-base py-6 md:py-8 gap-4 sm:gap-0">
+    <div class="flex flex-col sm:flex-row justify-between items-center text-sm sm:text-base py-6 md:py-8 gap-4 sm:gap-0 text-theme">
       <div class="space-x-1 cursor-pointer">
-        <span>1</span><span class="underline hover:no-underline">2</span>
+        <span class="text-theme">1</span>
+        <span class="underline hover:no-underline text-theme">2</span>
       </div>
       <div>
-        <span class="underline hover:no-underline cursor-pointer">Next Page</span>
-        <span>&rarr;</span>
+        <span class="underline hover:no-underline cursor-pointer text-theme">Next Page</span>
+        <span class="text-theme">&rarr;</span>
       </div>
     </div>
   
-    <CallToAction/>
-  </div>
+    <CallToAction />
+</div>

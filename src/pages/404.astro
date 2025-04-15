@@ -1,11 +1,11 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+
 import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Header />
-<div class="flex h-80 justify-center items-center px-50 py-40">
+<Layout>
+  <div class="flex h-80 justify-center items-center px-50 py-40">
     <h1 class="text-5xl cardo-bold font-bold">404</h1>
-</div>
-<Footer />
+  </div>
+</Layout>

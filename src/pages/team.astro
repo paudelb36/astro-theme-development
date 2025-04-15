@@ -2,16 +2,17 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import TeamCard from "../components/TeamCard.astro";
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<Header />
-<div class="text-center px-4 md:px-28 bg-[#f9f9f9] py-28">
-  <h1 class="cardo-regular text-5xl mb-10">Meet our team</h1>
+<Layout>
+<div class="text-center px-4 md:px-28 bg-theme py-28">
+  <h1 class="font-theme text-5xl mb-10">Meet our team</h1>
   <p class="text-xl mb-10">
     Our comprehensive suite of professionals caters to a diverse team, <br/>ranging
     from seasoned architects to renowned engineers.
   </p>
   <TeamCard />
 </div>
-<Footer />
+</Layout>

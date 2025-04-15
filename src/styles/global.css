@@ -1,5 +1,75 @@
 @import "tailwindcss";
 
+/* Default Theme */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --font-base: "Inter", sans-serif;
+  --button-bg: #111111;
+  --button-text: #ffffff;
+  --color-cta-bg: #f9f9f9;}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-bg: #1a1a1a;
+  --color-text: #f1f1f1;
+  --font-base: "Cardo", serif;
+  --button-bg: #f1f1f1;
+  --button-text: #1a1a1a;
+  --color-cta-bg: #2d3748;
+}
+
+/* Fun Theme */
+[data-theme="fun"] {
+  --color-bg: #fff0f5;
+  --color-text: #7e22ce;
+  --font-base: "Underdog", cursive;
+  --button-bg: #7e22ce;
+  --button-text: #fff0f5;
+  --color-cta-bg: #fae8ff;
+}
+/* Professional Theme  */
+[data-theme="professional"] {
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --font-base: "Roboto", sans-serif;
+  --button-bg: #2563eb;
+  --button-text: #ffffff;
+  --color-cta-bg: #e0e7ff;
+}
+/* Earth Theme  */
+[data-theme="earth"] {
+  --color-bg: #f5f5f0;
+  --color-text: #3c3633;
+  --font-base: "Lora", serif;
+  --button-bg: #7c6a46;
+  --button-text: #f5f5f0;
+  --color-cta-bg: #e8e1d9;
+}
+
+
+
+@layer components {
+  .bg-theme {
+    background-color: var(--color-bg);
+  }
+  .text-theme {
+    color: var(--color-text);
+  }
+  .font-theme {
+    font-family: var(--font-base);
+  }
+  .bg-button {
+    background-color: var(--button-bg);
+  }
+  .text-button {
+    color: var(--button-text);
+  }
+  .bg-cta {
+    background-color: var(--color-cta-bg);
+  }
+}
+
 
 .cardo-regular {
     font-family: "Cardo", serif;
@@ -23,3 +93,4 @@
     list-style-type: '\2713';
     gap: 5px;
   }
+

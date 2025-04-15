@@ -2,11 +2,12 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Testimonial from "../components/Testimonial.astro";
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<Header />
-<div class="text-center bg-black py-28">
+<Layout>
+<div class="text-center bg-cta py-28">
   <Testimonial />
 </div>
-<Footer />
+</Layout>

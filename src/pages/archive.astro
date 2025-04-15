@@ -1,7 +1,7 @@
 ---
 import CategoryCard from "../components/CategoryCard.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 
 
@@ -26,8 +26,8 @@ const cardDetails = [
   },
 ];
 ---
-<Header />
-<div class="py-28 bg-[#f9f9f9]">
+<Layout>
+<div class="py-28 bg-theme">
     <div class="px-28 py-20">
         <h1 class="cardo-regular text-5xl">Category : <span class="cardo-regular-italic">Architecture</span></h1>
     </div>
@@ -41,5 +41,4 @@ const cardDetails = [
     </div>
 
 </div>
-
-<Footer />
+</Layout>

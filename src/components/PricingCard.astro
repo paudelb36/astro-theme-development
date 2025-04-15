@@ -1,30 +1,37 @@
----
-
----
-
-<div class="flex justify-around text-center  bg-white rounded-lg px-6 py-20 mx-auto my-10  ">
-    <div class="w-1/4 border-t">
-        <span class="cardo-regular-italic text-lg">Free</span>
-        <h2 class="text-7xl cardo-regular font-semibold my-4">$0</h2>
-        <p class="text-gray-600 py-4 border-b">Access to 5 exclusive Etudes Articles per month.</p>
-        <p class="text-gray-600 py-4 border-b line-through">Weekly print edition.</p>
-        <p class="text-gray-600 py-4 line-through">Exclusive access to the Études app for iOS and Android.</p>
-        <button class="w-full py-2 border rounded-md hover:bg-black hover:opacity-50 hover:text-white">Subscribe</button>
+<div class="flex flex-col md:flex-row justify-around text-center bg-theme rounded-lg px-6 py-20 mx-auto my-10 gap-8">
+    <!-- Free Tier -->
+    <div class="w-full md:w-1/4 border-t border-theme p-6">
+        <span class="font-theme italic text-lg text-theme">Free</span>
+        <h2 class="text-7xl font-theme font-semibold my-4 text-theme">$0</h2>
+        <p class="text-theme/80 py-4 border-b border-theme">Access to 5 exclusive Etudes Articles per month.</p>
+        <p class="text-theme/60 py-4 border-b border-theme line-through">Weekly print edition.</p>
+        <p class="text-theme/60 py-4 line-through">Exclusive access to the Études app for iOS and Android.</p>
+        <button class="w-full py-2 border border-theme rounded-md hover:bg-button hover:text-button transition-colors duration-200 font-theme">
+            Subscribe
+        </button>
     </div>
-    <div class="w-1/4 border-t-2 transform scale-100">
-        <span class="cardo-regular-italic text-lg">Connoisseur</span>
-        <h2 class="text-7xl cardo-regular font-semibold my-4">$12</h2>
-        <p class="text-gray-600 py-4 border-b">Access to 20 exclusive Études Articles per month.</p>
-        <p class="text-gray-600 py-4 border-b">Weekly print edition.</p>
-        <p class="text-gray-600 py-4">Access to 5 exclusive Etudes Articles per month.</p>
-        <button class="w-full py-2 border rounded-md text-white bg-black hover:opacity-50">Subscribe</button>
+
+    <!-- Connoisseur Tier (Featured) -->
+    <div class="w-full md:w-1/4 border-t-2 border-theme p-6 transform scale-100 md:scale-105 bg-cta rounded-lg">
+        <span class="font-theme italic text-lg text-theme">Connoisseur</span>
+        <h2 class="text-7xl font-theme font-semibold my-4 text-theme">$12</h2>
+        <p class="text-theme/80 py-4 border-b border-theme">Access to 20 exclusive Études Articles per month.</p>
+        <p class="text-theme/80 py-4 border-b border-theme">Weekly print edition.</p>
+        <p class="text-theme/80 py-4">Access to 5 exclusive Etudes Articles per month.</p>
+        <button class="w-full py-2 border border-theme rounded-md bg-button text-button hover:opacity-80 transition-opacity duration-200 font-theme">
+            Subscribe
+        </button>
     </div>
-    <div class="w-1/4 border-t">
-        <span class="cardo-regular-italic text-lg">Expert</span>
-        <h2 class="text-7xl cardo-regular font-semibold my-4">$28</h2>
-        <p class="text-gray-600 py-4 border-b">Access to 5 exclusive Etudes Articles per month.</p>
-        <p class="text-gray-600 py-4 border-b">Weekly print edition.</p>
-        <p class="text-gray-600 py-4">Access to 5 exclusive Etudes Articles per month.</p>
-        <button class="w-full py-2 border rounded-md hover:bg-black hover:opacity-50 hover:text-white">Subscribe</button>
+
+    <!-- Expert Tier -->
+    <div class="w-full md:w-1/4 border-t border-theme p-6">
+        <span class="font-theme italic text-lg text-theme">Expert</span>
+        <h2 class="text-7xl font-theme font-semibold my-4 text-theme">$28</h2>
+        <p class="text-theme/80 py-4 border-b border-theme">Access to 5 exclusive Etudes Articles per month.</p>
+        <p class="text-theme/80 py-4 border-b border-theme">Weekly print edition.</p>
+        <p class="text-theme/80 py-4">Access to 5 exclusive Etudes Articles per month.</p>
+        <button class="w-full py-2 border border-theme rounded-md hover:bg-button hover:text-button transition-colors duration-200 font-theme">
+            Subscribe
+        </button>
     </div>
 </div>
