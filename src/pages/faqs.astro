@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+
+<section class="min-h-screen bg-theme text-theme font-theme py-20 px-4">
+  <div class="max-w-3xl mx-auto">
+
+    <!-- Title -->
+    <h1 class="h1-text font-bold mb-6">FAQs</h1>
+
+    <!-- FAQ Items -->
+    <div class="divide-y divide-white/20">
+
+      <!-- Single FAQ -->
+      <div>
+        <button class="faq-toggle w-full flex items-center gap-3 py-3 border-b border-white/30 text-xl ">
+          <i class="ri-arrow-right-line icon text-base"></i>
+          <span>What is your process working in smaller projects?</span>
+        </button>
+        <div class="faq-content hidden text-base text-theme mt-2 pb-3">
+          Études offers comprehensive consulting, management, design, and research solutions. Our vision is to be at the forefront of architectural innovation, fostering a global community of architects and enthusiasts united by a passion for creating spaces. Every architectural endeavor is an opportunity to shape the future.
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <button class="faq-toggle w-full flex items-center gap-3 py-3 border-b border-white/30 text-xl ">
+          <i class="ri-arrow-right-line icon text-base"></i>
+          <span>Who is behind Études?</span>
+        </button>
+        <div class="faq-content hidden text-base text-theme mt-2 pb-3">
+          Études is a team of multidisciplinary professionals with experience in architecture, design, and technology, collaborating to deliver impactful solutions.
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <button class="faq-toggle w-full flex items-center gap-3 py-3 border-b border-white/30 text-xl ">
+          <i class="ri-arrow-right-line icon text-base"></i>
+          <span>I’d like to meet fellow architects, how can I do that?</span>
+        </button>
+      
+        <div class="faq-content hidden text-base text-theme mt-2 pb-3">
+          Join our online forums or attend Études community events, workshops, and webinars where we bring professionals together to connect and collaborate.
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <button class="faq-toggle w-full flex items-center gap-3 py-3 border-b border-white/30 text-xl ">
+          <i class="ri-arrow-right-line icon text-base"></i>
+          <span>Can I apply to be a part of the team or work as a contractor?</span>
+        </button>
+        <div class="faq-content hidden text-base text-theme mt-2 pb-3">
+          Absolutely. We’re always open to passionate collaborators. Send your portfolio and details to our careers page or email.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script is:inline>
+    document.querySelectorAll(".faq-toggle").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector(".icon");
+
+        content.classList.toggle("hidden");
+        icon.classList.toggle("ri-arrow-right-line");
+        icon.classList.toggle("ri-arrow-down-line");
+      });
+    });
+  </script>
+</section>
+
+</Layout>
