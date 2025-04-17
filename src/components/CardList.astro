@@ -14,24 +14,64 @@ const description =
   "Experience the fusion of imagination and expertise with Études Architectural Solutions.";
 ---
 
-<section class="text-center pt-12 md:pt-20 lg:pt-28 px-4 sm:px-6 max-w-4xl mx-auto">
+<section
+  class="text-center pt-12 md:pt-20 lg:pt-28 px-4 sm:px-6 max-w-4xl mx-auto"
+>
   <span class="flex justify-center mb-3 md:mb-4">
-    <img
-      class="h-7 w-7"
-      src="https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0a47c-site_logo-1.png?w=50&h=50"
-      alt="Logo"
-    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 515 515"
+      class="h-5 w-5 fill-current text-theme"
+    >
+      <g id="Group 1">
+        <rect
+          id="Rectangle 1"
+          x="237.327"
+          y="514.921"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(-90.8164 237.327 514.921)"></rect>
+        <rect
+          id="Rectangle 4"
+          x="0.0791626"
+          y="236.327"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(-0.816392 0.0791626 236.327)"></rect>
+        <rect
+          id="Rectangle 2"
+          x="93.9012"
+          y="59.0935"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(45.084 93.9012 59.0935)"></rect>
+        <rect
+          id="Rectangle 3"
+          x="457.906"
+          y="94.9012"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(135.084 457.906 94.9012)"></rect>
+      </g>
+    </svg>
   </span>
-  <h1 class="text-3xl sm:text-4xl lg:text-5xl cardo-regular font-light mb-4 md:mb-6 leading-snug md:leading-tight">
+  <h1
+    class="text-3xl sm:text-4xl lg:text-5xl cardo-regular font-light mb-4 md:mb-6 leading-snug md:leading-tight"
+  >
     A passion for creating spaces
   </h1>
   <p class="text-base sm:text-lg mb-6 md:mb-8">
     Our comprehensive suite of professional services caters to a diverse
-    clientele,<br class="hidden sm:inline" /> ranging from homeowners to commercial developers.
+    clientele,<br class="hidden sm:inline" /> ranging from homeowners to commercial
+    developers.
   </p>
 </section>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-5 pb-12 md:pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8 xl:px-28">
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-5 pb-12 md:pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8 xl:px-28"
+>
   {
     cardData.map((card) => (
       <Blurb title={card.title} description={description} />

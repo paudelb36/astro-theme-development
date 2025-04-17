@@ -3,13 +3,47 @@ const { title, description } = Astro.props;
 ---
 
 <section class="p-2 md:p-4">
-  <span class="">
-    <img
-      class="h-7 w-7 mb-1 md:mb-3"
-      src="https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0a47c-site_logo-1.png?w=50&h=50"
-      alt=""
-    />
+  <span class="flex justify-start mb-3 md:mb-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 515 515"
+      class="h-5 w-5 fill-current text-theme"
+    >
+      <g id="Group 1">
+        <rect
+          id="Rectangle 1"
+          x="237.327"
+          y="514.921"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(-90.8164 237.327 514.921)"></rect>
+        <rect
+          id="Rectangle 4"
+          x="0.0791626"
+          y="236.327"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(-0.816392 0.0791626 236.327)"></rect>
+        <rect
+          id="Rectangle 2"
+          x="93.9012"
+          y="59.0935"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(45.084 93.9012 59.0935)"></rect>
+        <rect
+          id="Rectangle 3"
+          x="457.906"
+          y="94.9012"
+          width="514.269"
+          height="49.4265"
+          transform="rotate(135.084 457.906 94.9012)"></rect>
+      </g>
+    </svg>
   </span>
+
   <h1 class="text-xl font-semibold mb-1 md:mb-3">
     {title}
   </h1>
@@ -17,4 +51,3 @@ const { title, description } = Astro.props;
     {description}
   </p>
 </section>
-

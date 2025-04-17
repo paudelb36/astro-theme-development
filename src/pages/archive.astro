@@ -1,9 +1,7 @@
 ---
 import CategoryCard from "../components/CategoryCard.astro";
-
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-
 
 const cardDetails = [
   {
@@ -26,19 +24,23 @@ const cardDetails = [
   },
 ];
 ---
+
 <Layout>
-<div class="py-28 bg-theme">
-    <div class="px-28 py-20">
-        <h1 class="cardo-regular text-5xl">Category : <span class="cardo-regular-italic">Architecture</span></h1>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 justify-self-center gap-10">
-    {
-        cardDetails.map((card) => (
-          <CategoryCard title={card.title} description={card.description} image={card.image} />
-        ))
-      }
-
+  <div class="py-20 bg-theme">
+    <div class="px-4 sm:px-6 md:px-10 lg:px-28 py-10 max-w-screen-xl mx-auto">
+      <h1 class="cardo-regular text-3xl sm:text-4xl md:text-5xl leading-snug">
+        Category: <span class="cardo-regular-italic">Architecture</span>
+      </h1>
     </div>
 
-</div>
+    <div class="px-4 sm:px-6 md:px-10 lg:px-28 max-w-screen-xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+        {
+          cardDetails.map((card) => (
+            <CategoryCard title={card.title} description={card.description} image={card.image} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </Layout>

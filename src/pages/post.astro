@@ -1,194 +1,213 @@
 ---
 import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-<div class="bg-theme">
-  <section class="justify-start pt-24 pb-12 px-6 md:px-8 max-w-2xl mx-auto">
-    <img
-      class="h-auto w-full rounded-lg"
-      src="https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0565b-tt4_post_1.jpg"
-      alt=""
-    />
-    <h1
-      class="text-xl md:text-3xl cardo-regular font-light mb-4 mt-6 md:mb-6 md:mt-10 leading-snug md:leading-tight"
-    >
-      The Art of Balancing Form and Function in Architecture
-    </h1>
-    <div
-      class="text-sm sm:text-base flex flex-wrap items-center gap-1 sm:gap-2"
-    >
-      <span class="text-gray-500 hover:underline">Aug 14, 2023</span>
-      <span class="text-gray-500 hidden sm:inline">-</span>
-      <span class="text-gray-500">by</span>
-      <span class="hover:underline">Joan Smith</span>
-      <span class="text-gray-500">in</span>
-      <span class="hover:underline">Architecture</span>
-    </div>
-  </section>
-  <section class="justify-start pt-5 pb-12 px-6 md:px-8 max-w-2xl mx-auto">
-    <p class="text-base text-gray-500 cardo-regular-italic md:text-lg md:mb-2">
-      An Interview with Architect Helga Steiner
-    </p>
-    <p class="font-bold text-base mb-6 md:mb-8">
-      <span class="italic">Rhye Moore: </span> Good day, Helga. Thank you for joining
-      me today to discuss the captivating world of architecture and the delicate
-      balance between form and function in your work. Let's dive right in. How do
-      you define the relationship between form and function in architecture?
-    </p>
-    <p class="text-base mb-6 md:mb-8">
-      <span class="italic">Helga Steiner: </span> Hello, Rhye. It's a pleasure to
-      be here. The relationship between form and function in architecture is akin
-      to a harmonious dance. Form represents the aesthetics, the visual and emotional
-      aspects of a building, while function is its practical purpose and how it serves
-      the occupants. The two are deeply intertwined; they should enhance one another
-      rather than compete. A successful design finds a way to meld these elements
-      seamlessly.
-    </p>
-    <p class="font-bold text-base mb-6 md:mb-8">
-      <span class="italic">Rhye Moore: </span>It sounds like a delicate
-      equilibrium. How do you approach achieving this balance in your projects?
-    </p>
-    <p class="text-base mb-6 md:mb-8">
-      <span class="italic">Helga Steiner: </span>You're absolutely right; it is
-      delicate, but it's also one of the most rewarding aspects of architecture.
-      To achieve this balance, I start by thoroughly understanding the project's
-      functional requirements and its context. Every building has a purpose,
-      whether it's a home, a museum, or an office. The design must serve that
-      purpose effectively. Once that foundation is laid, I explore the form,
-      drawing inspiration from the site, culture, and the client's vision. It's
-      about finding that sweet spot where aesthetics enhance functionality and
-      vice versa.
-    </p>
-  </section>
-
-  <!-- highlight text  -->
-  <section class="text-center py-2 px-4 sm:px-6 max-w-7xl mx-auto">
-    <h1
-      class="text-xl sm:text-2xl md:text-3xl lg:text-4xl cardo-regular-italic font-light mb-4 sm:mb-5 md:mb-6 leading-snug sm:leading-normal md:leading-tight"
-    >
-      "Sustainability is non-negotiable in today's world. It's not just a trend;
-      it's a responsibility. I incorporate sustainable features into my designs
-      from the very beginning."
-    </h1>
-    <p class="text-base">Helga Steiner</p>
-  </section>
-
-  <section class="justify-start pt-10 px-6 md:px-8 max-w-2xl mx-auto">
-    <p class="font-bold text-base mb-6 md:mb-8">
-      <span class="italic">Rhye Moore: </span> Can you give us an example of a project
-      where you had to navigate this delicate balance between form and function?
-    </p>
-    <p class="text-base mb-6 md:mb-8">
-      <span class="italic">Helga Steiner: </span> Certainly. Let's talk about the
-      Oceanfront Residence I designed a few years ago. The clients wanted a modern,
-      spacious home with stunning ocean views. The functional aspect was clear: it
-      needed to provide comfortable living spaces and make the most of the view.
-      However, the challenge was ensuring that the modern, bold form of the house
-      didn't obstruct the natural beauty of the surroundings. We achieved this by
-      using large, strategically placed windows that framed the ocean like living
-      artworks. The form of the house complemented the natural beauty, enhancing
-      both the function and the aesthetics.
-    </p>
-    <p class="font-bold text-base mb-6 md:mb-8">
-      <span class="italic">Rhye Moore: </span>That sounds breathtaking. How do
-      you handle situations where the client's vision and practical requirements
-      clash with your artistic instincts?
-    </p>
-    <p class="text-base mb-6 md:mb-8">
-      <span class="italic">Helga Steiner: </span>Collaboration is key. I believe
-      in open communication with my clients. We have to understand each other's
-      perspectives and constraints. When there's a clash between their vision
-      and the practical requirements, it often leads to fruitful discussions and
-      innovative solutions. It's about finding common ground and guiding them
-      toward a design that satisfies both their desires and the architectural
-      principles.
-    </p>
-    <div class="pb-6 max-w-2xl mx-auto">
-      <p class="pt-2 border-t border-t-gray-400 w-14 text-xs cardo-regular">
-        Share this:
-      </p>
-      <button class="mt-2 py-1 px-2 text-xs rounded border hover:shadow-md">
-        <i class="ri-twitter-fill text-xs"></i>
-        Twitter
-      </button>
-      <button class="mt-2 py-1 px-2 text-xs rounded border hover:shadow-md">
-        <i class="ri-facebook-fill text-xs"></i> Facebook
-      </button>
-    </div>
-    <div class="relative pb-12 mx-auto">
-      <button class="mt-2 py-1 px-2 text-xs rounded border hover:shadow-md">
-        <i class="ri-repeat-line text-xs"></i> Reblog
-      </button>
-      <button class="mt-2 py-1 px-2 text-xs rounded border hover:shadow-md">
-        <i class="ri-star-line text-xs hover:text-blue-400"></i> Like
-      </button>
-      <div class="flex items-center absolute top-1 left-44">
-        <img
-          class="h-8 w-8 rounded-full"
-          src="https://1.gravatar.com/avatar/73acde894378faa2ba7e17344f82b0c14ac7bf99293397e81811b801be65c77b?s=96&d=identicon&r=G"
-          alt="Annie Steiner portrait"
-        />
-        <img
-          class="h-8 w-8 rounded-full"
-          src="https://2.gravatar.com/avatar/2935b9a2e7d6634d8fe3b0839699e4fcd1e9eb3f5f8d75cd0690a597b861a0f9?s=96&d=identicon&r=G"
-          alt="Annie Steiner portrait"
-        />
-        <p class="pl-3 underline text-sm">2 likes</p>
-      </div>
-    </div>
-    <div class="pb-10 mx-auto">
-      <ul class="flex items-center gap-6 text-xs">
-        <li class="px-4 py-2 hover:underline hover:bg-amber-500 rounded-full">
-          architects
-        </li>
-        <li class="px-4 py-2 hover:underline hover:bg-gray-500 rounded-full">
-          Architecture
-        </li>
-        <li class="px-4 py-2 hover:underline hover:bg-gray-500 rounded-full">
-          form
-        </li>
-        <li class="px-4 py-2 hover:underline hover:bg-gray-500 rounded-full">
-          function
-        </li>
-      </ul>
-    </div>
-    <div class="py-6 mx-auto border-t-gray-700 border-t"></div>
-    <div>
-      <h1
-        class="text-xl md:text-3xl cardo-regular font-light leading-snug md:leading-tight"
-      >
-        Comments
-      </h1>
-      <h2
-        class="py-6 text-lg md:text-2xl cardo-regular font-light leading-snug md:leading-tight"
-      >
-        One response to "The Art of Balancing Form and Function in Architecture"
-      </h2>
-    </div>
-    <div class="flex items-center gap-3">
+  <div class="bg-theme">
+    <section class="justify-start pt-24 pb-12 px-6 md:px-8 max-w-2xl mx-auto">
       <img
-        class="h-12 w-12 rounded-full"
-        src="https://1.gravatar.com/avatar/73acde894378faa2ba7e17344f82b0c14ac7bf99293397e81811b801be65c77b?s=96&d=identicon&r=G"
-        alt="Annie Steiner portrait"
+        class="h-auto w-full rounded-lg"
+        src="https://twentytwentyfourdemo.wordpress.com/wp-content/uploads/2023/11/0565b-tt4_post_1.jpg"
+        alt=""
       />
-      <div class="flex flex-col">
-        <span class="test-sm font-semibold">Francesca Piovani </span>
-        <span class="test-sm">September 22, 2023 </span>
+      <h1
+        class="text-xl md:text-3xl cardo-regular font-light mb-4 mt-6 md:mb-6 md:mt-10 leading-snug md:leading-tight"
+      >
+        The Art of Balancing Form and Function in Architecture
+      </h1>
+      <div
+        class="text-sm sm:text-base flex flex-wrap items-center gap-1 sm:gap-2"
+      >
+        <span class="text-gray-500 hover:underline">Aug 14, 2023</span>
+        <span class="text-gray-500 hidden sm:inline">-</span>
+        <span class="text-gray-500">by</span>
+        <span class="hover:underline">Joan Smith</span>
+        <span class="text-gray-500">in</span>
+        <span class="hover:underline">Architecture</span>
       </div>
-    </div>
-    <div>
-      <p class="text-sm pt-5">Lovely interview!</p>
-      <button class="mt-2 p text-xs">
-        <i class="ri-star-line text-xs hover:text-blue-400"></i> Like
-      </button>
-    </div>
-    <div class="py-20">
-      <i class="ri-arrow-left-line"></i><span class="underline hover:no-underline cursor-pointer">Previous: Impressive Buildings</span>
-    </div>
-  </section>
-</div>
+    </section>
+    <section class="justify-start pt-5 pb-12 px-6 md:px-8 max-w-2xl mx-auto">
+      <p
+        class="text-base text-gray-500 cardo-regular-italic md:text-lg md:mb-2"
+      >
+        An Interview with Architect Helga Steiner
+      </p>
+      <p class="font-bold text-base mb-6 md:mb-8">
+        <span class="italic">Rhye Moore: </span> Good day, Helga. Thank you for joining
+        me today to discuss the captivating world of architecture and the delicate
+        balance between form and function in your work. Let's dive right in. How
+        do you define the relationship between form and function in architecture?
+      </p>
+      <p class="text-base mb-6 md:mb-8">
+        <span class="italic">Helga Steiner: </span> Hello, Rhye. It's a pleasure
+        to be here. The relationship between form and function in architecture is
+        akin to a harmonious dance. Form represents the aesthetics, the visual and
+        emotional aspects of a building, while function is its practical purpose
+        and how it serves the occupants. The two are deeply intertwined; they should
+        enhance one another rather than compete. A successful design finds a way
+        to meld these elements seamlessly.
+      </p>
+      <p class="font-bold text-base mb-6 md:mb-8">
+        <span class="italic">Rhye Moore: </span>It sounds like a delicate
+        equilibrium. How do you approach achieving this balance in your
+        projects?
+      </p>
+      <p class="text-base mb-6 md:mb-8">
+        <span class="italic">Helga Steiner: </span>You're absolutely right; it
+        is delicate, but it's also one of the most rewarding aspects of
+        architecture. To achieve this balance, I start by thoroughly
+        understanding the project's functional requirements and its context.
+        Every building has a purpose, whether it's a home, a museum, or an
+        office. The design must serve that purpose effectively. Once that
+        foundation is laid, I explore the form, drawing inspiration from the
+        site, culture, and the client's vision. It's about finding that sweet
+        spot where aesthetics enhance functionality and vice versa.
+      </p>
+    </section>
+
+    <!-- highlight text  -->
+    <section class="text-center py-2 px-4 sm:px-6 max-w-7xl mx-auto">
+      <h1
+        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl cardo-regular-italic font-light mb-4 sm:mb-5 md:mb-6 leading-snug sm:leading-normal md:leading-tight"
+      >
+        "Sustainability is non-negotiable in today's world. It's not just a
+        trend; it's a responsibility. I incorporate sustainable features into my
+        designs from the very beginning."
+      </h1>
+      <p class="text-base">Helga Steiner</p>
+    </section>
+
+    <section class="justify-start pt-10 px-6 md:px-8 max-w-2xl mx-auto">
+      <p class="font-bold text-base mb-6 md:mb-8">
+        <span class="italic">Rhye Moore: </span> Can you give us an example of a
+        project where you had to navigate this delicate balance between form and
+        function?
+      </p>
+      <p class="text-base mb-6 md:mb-8">
+        <span class="italic">Helga Steiner: </span> Certainly. Let's talk about the
+        Oceanfront Residence I designed a few years ago. The clients wanted a modern,
+        spacious home with stunning ocean views. The functional aspect was clear:
+        it needed to provide comfortable living spaces and make the most of the view.
+        However, the challenge was ensuring that the modern, bold form of the house
+        didn't obstruct the natural beauty of the surroundings. We achieved this
+        by using large, strategically placed windows that framed the ocean like living
+        artworks. The form of the house complemented the natural beauty, enhancing
+        both the function and the aesthetics.
+      </p>
+      <p class="font-bold text-base mb-6 md:mb-8">
+        <span class="italic">Rhye Moore: </span>That sounds breathtaking. How do
+        you handle situations where the client's vision and practical
+        requirements clash with your artistic instincts?
+      </p>
+      <p class="text-base mb-6 md:mb-8">
+        <span class="italic">Helga Steiner: </span>Collaboration is key. I
+        believe in open communication with my clients. We have to understand
+        each other's perspectives and constraints. When there's a clash between
+        their vision and the practical requirements, it often leads to fruitful
+        discussions and innovative solutions. It's about finding common ground
+        and guiding them toward a design that satisfies both their desires and
+        the architectural principles.
+      </p>
+      <!-- Social buttons -->
+      <div class="pt-6 pb-12">
+        <p class="pt-2 border-t border-gray-400 w-14 text-xs cardo-regular">
+          Share this:
+        </p>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button class="py-1 px-3 text-xs rounded border hover:shadow-md">
+            <i class="ri-twitter-fill text-xs"></i> Twitter
+          </button>
+          <button class="py-1 px-3 text-xs rounded border hover:shadow-md">
+            <i class="ri-facebook-fill text-xs"></i> Facebook
+          </button>
+        </div>
+      </div>
+
+      <!-- Likes and avatars -->
+      <div class="relative pb-12">
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="py-1 px-2 text-xs rounded border hover:shadow-md">
+            <i class="ri-repeat-line text-xs"></i> Reblog
+          </button>
+          <button class="py-1 px-2 text-xs rounded border hover:shadow-md">
+            <i class="ri-star-line text-xs hover:text-blue-400"></i> Like
+          </button>
+        </div>
+        <div class="flex items-center mt-3 gap-2">
+          <img
+            class="h-8 w-8 rounded-full"
+            src="https://1.gravatar.com/avatar/73acde894378faa2ba7e17344f82b0c14ac7bf99293397e81811b801be65c77b?s=96&d=identicon&r=G"
+            alt="user1"
+          />
+          <img
+            class="h-8 w-8 rounded-full"
+            src="https://2.gravatar.com/avatar/2935b9a2e7d6634d8fe3b0839699e4fcd1e9eb3f5f8d75cd0690a597b861a0f9?s=96&d=identicon&r=G"
+            alt="user2"
+          />
+          <p class="pl-2 underline text-sm">2 likes</p>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="pb-10">
+        <ul class="flex flex-wrap gap-2 text-theme text-xs">
+          <li
+            class="px-3 py-1 rounded-full bg-gray-100 hover:bg-amber-400 hover:underline"
+          >
+            architects
+          </li>
+          <li
+            class="px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-500 hover:underline"
+          >
+            Architecture
+          </li>
+          <li
+            class="px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-500 hover:underline"
+          >
+            form
+          </li>
+          <li
+            class="px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-500 hover:underline"
+          >
+            function
+          </li>
+        </ul>
+      </div>
+
+      <!-- Comments -->
+      <div class="py-10 border-t border-gray-700">
+        <h1 class="text-xl md:text-3xl cardo-regular font-light mb-4">
+          Comments
+        </h1>
+        <h2 class="text-lg md:text-2xl cardo-regular font-light mb-6">
+          One response to "The Art of Balancing Form and Function in
+          Architecture"
+        </h2>
+        <div class="flex items-center gap-3">
+          <img
+            class="h-12 w-12 rounded-full"
+            src="https://1.gravatar.com/avatar/73acde894378faa2ba7e17344f82b0c14ac7bf99293397e81811b801be65c77b?s=96&d=identicon&r=G"
+            alt="commenter"
+          />
+          <div class="flex flex-col">
+            <span class="text-sm font-semibold">Francesca Piovani</span>
+            <span class="text-sm">September 22, 2023</span>
+          </div>
+        </div>
+        <p class="text-sm pt-4">Lovely interview!</p>
+        <button class="mt-2 text-xs">
+          <i class="ri-star-line text-xs hover:text-blue-400"></i> Like
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="pt-10">
+        <i class="ri-arrow-left-line"></i>
+        <span class="underline hover:no-underline cursor-pointer"
+          >Previous: Impressive Buildings</span
+        >
+      </div>
+    </section>
+  </div>
 </Layout>
